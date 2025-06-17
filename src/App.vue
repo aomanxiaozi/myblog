@@ -1,7 +1,6 @@
 
 <template>
- 
-<p>111</p>
+<RouterView></RouterView>
 </template>
 
 <style scoped>
