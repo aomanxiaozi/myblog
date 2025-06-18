@@ -6,15 +6,20 @@
 <div class="element">hello,this is a element</div>
 <div class="element2">hello,this is a element2</div>
 <div class="element3">hello,this is a element3</div>
+<button @click="handleClick2" style="margin-top: 20px;">跳转</button>
 </div>
 </template>
 <script setup>
 import { ref } from 'vue'
+import { useRouter } from 'vue-router'
+const router = useRouter()
 const count = ref(0)
 const handleClick = () => {
     count.value++
 }
-
+const handleClick2 = () => {
+    router.push('/web1')
+}
 </script>
 
 <style scoped>  
@@ -41,13 +46,13 @@ const handleClick = () => {
     width: 100px;
     height: 100px;
     background-color: #00f;
-    transition: transform 2s;
+    transition: transform 1s,background-color 1s ease;
 }
 .element3:hover{
     width: 100px;
     height: 100px;
-    background-color: #00f;
+    background-color: rgb(42, 239, 137);
     transform:rotateX(45deg);
- 
+    transform:rotateY(45deg);
 }
 </style>

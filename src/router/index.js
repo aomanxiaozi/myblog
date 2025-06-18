@@ -10,6 +10,11 @@ const router =createRouter({
             component: () => import('../components/Home.vue')
         },
         {
+            path: '/web1',
+            name: 'web1',
+            component: () => import('../components/web1.vue')
+        },
+        {
             path: '/',
             redirect: '/home'
         }
