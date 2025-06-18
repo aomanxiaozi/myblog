@@ -6,7 +6,7 @@
 <div class="element">hello,this is a element</div>
 <div class="element2">hello,this is a element2</div>
 <div class="element3">hello,this is a element3</div>
-<button @click="handleClick2" style="margin-top: 20px;">跳转</button>
+<button @click="handleClick2">跳转</button>
 </div>
 </template>
 <script setup>
