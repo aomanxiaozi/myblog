@@ -6,7 +6,8 @@
 <div class="element">hello,this is a element</div>
 <div class="element2">hello,this is a element2</div>
 <div class="element3">hello,this is a element3</div>
-<button @click="handleClick2">跳转</button>
+<button @click="handleClick2">跳转three.js</button>
+<button @click="handleClick3" style="margin-top: 10px; font-size: 16px; padding: 10px 20px; border-radius: 5px; background-color: #007bff; color: #fff; border: none; cursor: pointer;">跳转home</button>
 </div>
 </template>
 <script setup>
@@ -19,6 +20,9 @@ const handleClick = () => {
 }
 const handleClick2 = () => {
     router.push('/web1')
+}
+const handleClick3 = () => {
+    router.push('/BlogHome')
 }
 </script>
 

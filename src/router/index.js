@@ -15,6 +15,11 @@ const router =createRouter({
             component: () => import('../components/web1.vue')
         },
         {
+            path: '/BlogHome',
+            name: 'BlogHome',
+            component: () => import('../components/BlogHome.vue')
+        },
+        {
             path: '/',
             redirect: '/home'
         }
