@@ -3,6 +3,9 @@
         <h1>博客首页</h1>
         <el-button type="primary">新增</el-button>
     </div>
+    <div>
+        <p>新的内容</p>
+    </div>
 </template>
 
 <script setup>
