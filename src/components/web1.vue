@@ -2,7 +2,7 @@
     <div class="web1">
         <div class="web1-header">hello,this is a web1</div>
         <canvas class="c">111</canvas>
-
+            
     </div>
 
 </template>

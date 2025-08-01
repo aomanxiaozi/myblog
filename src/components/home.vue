@@ -7,7 +7,11 @@
 <div class="element2">hello,this is a element2</div>
 <div class="element3">hello,this is a element3</div>
 <button @click="handleClick2">跳转three.js</button>
-<button @click="handleClick3" style="margin-top: 10px; font-size: 16px; padding: 10px 20px; border-radius: 5px; background-color: #007bff; color: #fff; border: none; cursor: pointer;">跳转home</button>
+<button @click="handleClick3" style="margin-top: 10px; font-size: 16px; 
+padding: 10px 20px; border-radius: 5px; 
+background-color: #007bff; color: #fff; border: none; 
+cursor: pointer;">跳转home</button>
+
 </div>
 </template>
 <script setup>
