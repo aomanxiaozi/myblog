@@ -15,10 +15,23 @@ const router =createRouter({
             component: () => import('../components/web1.vue')
         },
         {
-            path: '/BlogHome',
-            name: 'BlogHome',
-            component: () => import('../components/BlogHome.vue')
+            path: '/menu',
+            name: 'menu',
+            component:() => import('../components/Menu.vue'),
+            children:[
+                {
+                    path: 'bloghome',
+                    name: 'bloghome',
+                    component: () => import('../components/BlogHome.vue')
+                },
+                {
+                    path: 'note',
+                    name: 'note',
+                    component : () => import("../components/Note.vue")
+                }
+            ]  
         },
+     
         {
             path: '/',
             redirect: '/home'

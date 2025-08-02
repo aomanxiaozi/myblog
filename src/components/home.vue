@@ -26,7 +26,7 @@ const handleClick2 = () => {
     router.push('/web1')
 }
 const handleClick3 = () => {
-    router.push('/BlogHome')
+    router.push('/Menu/bloghome')
 }
 </script>
 
