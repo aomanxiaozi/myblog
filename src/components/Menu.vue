@@ -1,5 +1,6 @@
 <template>
     <div class="blog-home">
+
     <el-container>
     <el-header class="header">
             <el-menu
@@ -16,6 +17,7 @@
         <el-menu-item index="/menu/note">笔记</el-menu-item>
         <el-menu-item index="3">其他</el-menu-item>
         </el-menu>
+
     </el-header>
     <el-container >
       
@@ -35,10 +37,9 @@ import { useRouter,useRoute } from "vue-router";
 const route = useRoute();
 const router= useRouter();
 const activeIndex = ref(route.path);
+
 const handleSelect = (index) =>{
     activeIndex.value=index;
-    
- 
 }
 onMounted(()=>{
     activeIndex.value = route.path  // 确保路由已初始化
@@ -51,16 +52,14 @@ onMounted(()=>{
 <style scoped>
 
 .blog-home {
-  background-image: url("../bg_pe/mybg1.png");
   background-size: cover;
-  background-position: center;
-  background-repeat:no-repeat;
+  background: linear-gradient(#4fddf1, #90dcfa, #c0ebf3) no-repeat center;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  position: relative;
 }
 .header {
-
     display: flex;
     justify-content: center;  
     width: 100%;
@@ -77,8 +76,8 @@ onMounted(()=>{
 .footer {
     width: 100%;
     height: 30px;
-    background-color: #c3dd1b2a;
-    
+    background-color: rgba(236, 167, 106, 0.16);
+
 }
 
 .el-menu-demo {
@@ -95,13 +94,13 @@ onMounted(()=>{
     margin-left: 2px;
     margin-right: 2px;
     width: 200px;
-    border-bottom: none;
     border-radius: 5px;
     font-size: 15px;
     
 }
 .el-menu-demo .el-menu-item.is-active{
-    background-color:#e8aca7
+    border: 1px solid #f1d5a2;
+    background:linear-gradient(90deg, rgba(232, 243, 241, 0.5), rgba(220, 243, 239, 0.5), rgba(185, 246, 246, 0.5));
 }
 
 </style>

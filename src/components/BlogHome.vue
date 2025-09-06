@@ -31,25 +31,25 @@ const getdata_weather_date=()=>{
  })
 </script>
 <style>
+    .aside-left {
+      margin-left: 100px;
+      width: 400px;
+      height: 100%;
+      border: solid 1px;
+      padding-right: 20px;
+    }
+    .left-card{
+      border-radius: 10px;
+      background-color:rgba(190, 186, 186, 0.545);
+      border: none;
+    }
+    .date-weather{
 
-.aside-left {
-  margin-left: 100px;
-  width: 400px;
-  height: 100%;
-  border: solid 1px;
-  padding-right: 20px;
-}
-.left-card{
-  border-radius: 10px;
-  background-color:rgba(190, 186, 186, 0.545);
-  border: none;
-}
-.date-weather{
-
-}
-.aside-right {
-  margin-right: 100px;
-  width: 300px;
-  height: 100%;
-  background-color: #1f2a9b;
-}</style>
+    }
+    .aside-right {
+      margin-right: 100px;
+      width: 300px;
+      height: 100%;
+      background-color: #1f2a9b;
+    }
+</style>
